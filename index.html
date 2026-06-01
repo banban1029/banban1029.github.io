@@ -371,14 +371,14 @@
     <header>
         <div class="container">
             <h1>Tahara Banjou</h1>
-            <p class="last-updated">最終更新日：2026年5月31日</p>
+            <p class="last-updated">最終更新日：2026年6月1日</p>
         </div>
     </header>
 
     <nav>
         <ul>
             <li><a href="#about-me">About me</a></li>
-            <li><a href="#awards">Skills</a></li>
+            <li><a href="#awards">Awards</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#links">Links</a></li>
@@ -392,13 +392,44 @@
             <p>
                 所属：大阪大学 大学院基礎工学研究科 システム創成専攻 システム科学領域 岩井研究室．<br>
                 趣味：絶景絶叫，美術館巡り，カメラ．<br>
-                専攻キーワード：XR，プロジェクションマッピング，Computer Graphics，質感科学，AI，Robotics<br>
+                専攻キーワード：XR，プロジェクションマッピング，Computer Graphics，質感科学，空間コンピューティング，AI，自動運転，Robotics<br>
                 長期インターン歴：KGモーターズ株式会社(1年半)，株式会社松尾研究所(1年)<br>
             </p>
         </section>
 
         <hr>
-        <h2>・ プロジェクト</h2>
+        <h1 id="awards">Awards</h1>
+        <section>
+            <div class="project">
+                <h2>2026年3月</h2>
+                <div class="project-details">
+                    <div class="project-media">
+                        <h4>授与品</h4>
+                        <div class="screenshots" style="display: block;">
+                            <img src="images/award1.JPG" alt="自動運転AIチャレンジ スクリーンショット"
+                                style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto;">
+                        </div>
+                    </div>
+
+                    <div class="project-explain">
+                        <p>
+                            <strong>楠本賞</strong><br>
+                            大阪大学，大阪大学基礎工学部システム科学科首席卒業（1/200人）．
+                        </p>
+                        <p>
+                            <strong>SICE優秀学生賞</strong><br>
+                            計測自動制御学会，同学科からの推薦．
+                        </p>
+                        <p>
+                            <strong>Σグローバルリーダー賞</strong><br>
+                            大阪大学基礎工学部，夏の海外留学プログラムでの成果．
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <h1>Projects</h1>
         <section>
             <div class="project">
                 <h2>自動運転AIチャレンジ2025 インテグレーション大会</h2>
@@ -524,7 +555,7 @@
                         </p>
                         <p>
                             <strong>リンク</strong><br>
-                            <a href="https://zenn.dev/banban1029/articles/171ae7bb341897" target="_blank"
+                            <a href="https://zenn.dev/kg_motors_mibot/articles/8fc7625d5813df" target="_blank"
                                 rel="noopener noreferrer">Zenn技術解説記事：Unityでmibotを動かす！KGモーターズの自動運転開発の裏側</a>
                         </p>
                     </div>
@@ -576,225 +607,6 @@
             </div>
         </section>
 
-        <section>
-            <div class="project">
-                <h2>四足歩行ロボット制御：Mini Pupperを用いたマルチモーダル自律対話システム</h2>
-                <h3>大阪大学自主研究奨励事業2023採択プロジェクトおよび技術検証</h3>
-                <div class="project-details">
-                    <div class="project-media">
-                        <h4>実装図</h4>
-                        <div class="screenshots" style="display: block;">
-                            <img src="images/face.png" alt="自動運転AIチャレンジ スクリーンショット"
-                                style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto;">
-                        </div>
-                        <div class="screenshots" style="display: block;">
-                            <img src="images/minipupper.png" alt="自動運転AIチャレンジ スクリーンショット"
-                                style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto;">
-                        </div>
-                    </div>
-
-                    <div class="project-explain">
-                        <p>
-                            <strong>研究概要</strong><br>
-                            小型四足歩行ロボットであるMiniPupper1を用い、Linux環境におけるROS2を用いたシステムを構築しました．ユーザーの音声入力をトリガーとして、LLMによる行動決定と表情生成AIプロンプトエンジニアリングを統合した自律対話システムを個人開発しました．
-                        </p>
-                        <p>
-                            <strong>開発期間 / 役割</strong><br>
-                            2023年7月から2024年1月の約半年間．企画立案，予算運用，技術実装，成果報告までを1名で一貫して担当しました．
-                        </p>
-                        <p>
-                            <strong>研究背景および動機</strong><br>
-                            アニマルセラピーの分野においてペット型ロボットがもたらす心理的効果に着目しました．実家で暮らす愛犬との原体験から、ロボットによる癒やしのメカニズムを単に体験するだけでなく、その制御構造を自ら設計して実装することで本質的な技術アプローチを試みたいと考えたことが動機です．
-                        </p>
-                        <p>
-                            <strong>エンジニアとしての抱負と得られたマインドセット</strong><br>
-                            実機が駆動音を立てて思い通りに動いた瞬間から，実機制御の奥深さを学びました．同時に，どれほどアルゴリズムを改良しても物理的制約の前には限界があることを知り，ソフトとハードの両面を横断的に捉えられる人材になりたいという強い意識が芽生えました．また，思い通りに動かないエラーすらも，理想と現実のギャップを埋めるための「未知なる挙動の発見」と捉え，失敗をプロセスとして楽しむ心の余裕を培いました．この経験は，正解のない技術課題に挑み続ける現在の研究活動において，大きな支えとなっています．
-                        </p>
-                        <p>
-                            <strong>リンク</strong><br>
-                            <a href="https://zenn.dev/banban1029/articles/171ae7bb341897" target="_blank"
-                                rel="noopener noreferrer">Zenn技術解説記事：はじめての犬型ロボット制御奮闘記</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <h2>・ 個人作品</h2>
-        <section>
-            <div class="project">
-                <h2>一矢当千（いっしとうせん）</h2>
-                <div class="project-details">
-                    <div class="project-media">
-                        <h4>演習スクリーンショット</h4>
-                        <div class="screenshots">
-                            <img src="Images/GreatArcher/title.png" alt="GreatArcher Screenshot 1">
-                            <img src="Images/GreatArcher/play1.png" alt="GreatArcher Screenshot 2">
-                            <img src="Images/GreatArcher/play2.png" alt="GreatArcher Screenshot 3">
-                        </div>
-                        <h4>プレイ動画</h4>
-                        <div class="video-container">
-                            <video controls width="100%">
-                                <source src="Movies/GreatArcher.mp4" type="video/mp4">
-                                ご使用のブラウザは動画再生に対応していません。
-                            </video>
-                        </div>
-                    </div>
-                    <div class="project-explain">
-                        <p>
-                            <strong>ゲーム説明</strong><br>
-                            エルフとなり弓を引いて森を守る「シューティング×ローグライク×タワーディフェンス」ゲームです。買い物による能力強化と戦闘を交互に繰り返します。最後のウェーブにやって来るボスを倒すとゲームクリアです！
-                        </p>
-                        <p>
-                            <strong>開発期間</strong><br>
-                            2025年8月4日～11日（約50時間）
-                        </p>
-                        <p>
-                            <strong>制作メンバー</strong><br>
-                            1人
-                        </p>
-                        <p>
-                            <strong>制作背景</strong><br>
-                            <a href="https://unityroom.com/unity1weeks/67" target="_blank"
-                                rel="noopener noreferrer">Unity1週間ゲームジャム
-                                お題「ひく」</a>への投稿作品として制作しました。短期間で完成度の高いゲームを制作するスキルを磨くことを目的としました。
-                        </p>
-                        <ul>
-                            <strong>こだわった点</strong>
-                            <li>「敵を"引き"つけて一気に貫く爽快感」を実現するために、攻撃ヒット時の音の高さをコンボ数に応じて高くするシステムや、ヒットストップを実装しました。</li>
-                            <li>敵の実装では、共通のHP管理機能などを備えた基底クラスを定義し、それを継承して飛行やジャンプといった固有のAIを持つ派生クラスを実装する設計にしました。これにより、新しい挙動を持つ敵の追加や敵全体に関わる仕様変更が容易になりました。
-                            </li>
-                            <li>ゲームシステムのスクリプトを機能ごとに分けることで、可読性や保守性を確保しました。</li>
-                            <li>敵の出現タイミングや種類を含むステージ構成を構造体の配列として定義し、コルーチンで制御するシステムを構築しました。WaitUntil
-                                関数を活用してゲームの状態遷移（ショップ終了、敵全滅など）を一本のフローで記述したことで、バグが入り込みにくい堅牢なゲームループを実現しました。</li>
-                        </ul>
-                        <p>
-                            <strong>リンク</strong><br>
-                            <a href="https://github.com/tanahashi415/Great-Archer/tree/scripts_only" target="_blank"
-                                rel="noopener noreferrer">GitHub</a>｜
-                            <a href="https://unityroom.com/games/great-archer" target="_blank"
-                                rel="noopener noreferrer">unityroom</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="project">
-                <h2>Goggle.dino</h2>
-                <div class="project-details">
-                    <div class="project-media">
-                        <h4>演習スクリーンショット</h4>
-                        <div class="screenshots">
-                            <img src="Images/Goggle.dino/title.png" alt="Goggle.dino Screenshot 1">
-                            <img src="Images/Goggle.dino/play.png" alt="Goggle.dino Screenshot 2">
-                        </div>
-                        <h4>プレイ動画</h4>
-                        <div class="video-container">
-                            <video controls width="100%">
-                                <source src="Movies/Goggle.dino.mp4" type="video/mp4">
-                                ご使用のブラウザは動画再生に対応していません。
-                            </video>
-                        </div>
-                    </div>
-                    <div class="project-explain">
-                        <p>
-                            <strong>ゲーム説明</strong><br>
-                            Google
-                            Chromeの「chrome://dino」をオマージュした2Dランゲームです。本家との違いは、時間が経つと視界がぼやけて画面にモザイクがかかる点です。モザイクは瞬きをすることで元に戻ります。「瞬きをすると画面が見えなくなってしまうが、放置しても画面が見えづらい」というジレンマにどう対処していくか、というのがこのゲーム独自の面白さになっています。
-                        </p>
-                        <p>
-                            <strong>開発期間</strong><br>
-                            2025年4月13日～20日（約50時間）
-                        </p>
-                        <p>
-                            <strong>制作メンバー</strong><br>
-                            1人
-                        </p>
-                        <p>
-                            <strong>制作背景</strong><br>
-                            <a href="https://unityroom.com/unity1weeks/66" target="_blank"
-                                rel="noopener noreferrer">Unity1週間ゲームジャム
-                                お題「あい」</a>への投稿作品として制作しました。短期間で完成度の高いゲームを制作するスキルを磨くことを目的としました。
-                        </p>
-                        <ul>
-                            <strong>こだわった点</strong>
-                            <li>操作やルールが複雑なため、チュートリアルを工夫しました。具体的には、操作やゲームルール、画面UIを段階的に一つずつ説明していくことで、理解しやすいチュートリアルを心掛けました。
-                            </li>
-                            <li>ゲームが上手い人だとモザイクがかかった状態でも簡単にプレイできてしまうということを考慮して、モザイクがかかった状態だとスコア倍率に補正をかけるようにし、瞬きをする意味を持たせました。
-                            </li>
-                            <li>unityroomのランキングをハイスコアランキングと走行距離ランキングの2つを用意することによって、「ハイスコアを狙うか、堅実に距離を稼ぐか」という戦略性が生まれ、ゲームプレイの奥深さを実現しました。
-                            </li>
-                            <li>当たり判定を実際の大きさよりわずかに小さくし、プレイヤーに理不尽さを感じさせない工夫をしました。</li>
-                        </ul>
-                        <p>
-                            <strong>リンク</strong><br>
-                            <a href="https://github.com/tanahashi415/Goggle.dino/tree/scripts_only" target="_blank"
-                                rel="noopener noreferrer">GitHub</a>｜
-                            <a href="https://unityroom.com/games/goggle_dino" target="_blank"
-                                rel="noopener noreferrer">unityroom</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="project">
-                <h2>JAPANESE PANCAKES</h2>
-                <div class="project-details">
-                    <div class="project-media">
-                        <h4>演習スクリーンショット</h4>
-                        <div class="screenshots">
-                            <img src="Images/JapanesePancakes/title.png" alt="JAPANESE PANCAKES Screenshot 1">
-                            <img src="Images/JapanesePancakes/play.png" alt="JAPANESE PANCAKES Screenshot 2">
-                        </div>
-                        <h4>プレイ動画</h4>
-                        <div class="video-container">
-                            <video controls width="100%">
-                                <source src="Movies/JapanesePancakes.mp4" type="video/mp4">
-                                ご使用のブラウザは動画再生に対応していません。
-                            </video>
-                        </div>
-                    </div>
-                    <div class="project-explain">
-                        <p>
-                            <strong>ゲーム説明</strong><br>
-                            真夏の日本でパンケーキを焼くゲームです。マウス操作でフライパンを傾けて、パンケーキを焦がさないように焼き、制限時間内にスコアを稼ぐ3Dアクションゲームです。パンケーキをひっくり返すと回転数に応じて加点され、焦がしたり落としたりすると減点されます。
-                        </p>
-                        <p>
-                            <strong>開発期間</strong><br>
-                            2024年8月11日～21日（約50時間）
-                        </p>
-                        <p>
-                            <strong>制作メンバー</strong><br>
-                            1人
-                        </p>
-                        <p>
-                            <strong>制作背景</strong><br>
-                            <a href="https://unityroom.com/unity1weeks/64" target="_blank"
-                                rel="noopener noreferrer">Unity1週間ゲームジャム お題「かえす」</a>への投稿作品として制作。初めての3Dゲーム制作に挑戦しました。
-                        </p>
-                        <ul>
-                            <strong>こだわった点</strong>
-                            <li>ゲーム中に登場するセミやフライパンはBlenderを用いて自作しました。</li>
-                            <li>スコアに応じてエンディングが変化するマルチエンディングやオンラインランキングを実装し、プレイヤーに明確な目的意識を与えました。</li>
-                            <li>マウス感度やX軸・Y軸反転をユーザーの好みに応じて設定できるようにオプションを充実させました。</li>
-                            <li>時間経過に応じて背景やパンケーキの色（焼き加減）がリアルタイムに変化するようにシェーダーやマテリアルを制御しました。</li>
-                        </ul>
-                        <p>
-                            <strong>リンク</strong><br>
-                            <a href="https://github.com/tanahashi415/Japanese-Pancakes/tree/scripts_only"
-                                target="_blank" rel="noopener noreferrer">GitHub</a>｜
-                            <a href="https://unityroom.com/games/japanese_pancakes" target="_blank"
-                                rel="noopener noreferrer">unityroom</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <hr>
 
         <h1 id="skills">Skills</h1>
@@ -810,53 +622,28 @@
                 <tbody>
                     <tr>
                         <td>C</td>
-                        <td>6ヶ月</td>
-                        <td>配列、ポインタ、ファイル処理などの基礎的な操作ができる。</td>
+                        <td>4年</td>
+                        <td>ソートやリスト等の基本アルゴリズムを網羅</td>
                     </tr>
                     <tr>
-                        <td>C++</td>
-                        <td>10ヶ月</td>
-                        <td>AtCoderで勉強中。茶色レート。C問題が大体解ける。</td>
+                        <td>C++，ROS2，OpenCV，OpenGL</td>
+                        <td>3年</td>
+                        <td>研究用途．実世界への幾何較正済み投影コンテンツ作成，自動運転開発</td>
                     </tr>
                     <tr>
-                        <td>C#</td>
-                        <td>6ヶ月</td>
-                        <td>Unityで使用。アルゴリズム関連は初心者レベル。MonoBehaviourを用いたゲーム木・データ処理は中級者レベル。</td>
+                        <td>C#，Unity</td>
+                        <td>3年</td>
+                        <td>Unityで使用</td>
                     </tr>
                     <tr>
-                        <td>Python</td>
-                        <td>2年6ヶ月</td>
-                        <td>機械学習やデータ処理などができる。リファレンスを参照しながら任意のプログラムを実装できる。</td>
-                    </tr>
-                    <tr>
-                        <td>Linux</td>
-                        <td>1年</td>
-                        <td>シェルスクリプトからプログラムを動かすことができる。</td>
-                    </tr>
-                    <tr>
-                        <td>Git</td>
-                        <td>1年</td>
-                        <td>Gitを用いたチーム開発経験あり。基本的なブランチ操作、コンフリクト解消などができる。</td>
-                    </tr>
-                    <tr>
-                        <td>Docker</td>
-                        <td>4ヶ月</td>
-                        <td>Dockerfileの作成、イメージ作成、コンテナ作成などができる。</td>
-                    </tr>
-                    <tr>
-                        <td>Unity</td>
-                        <td>6ヶ月</td>
-                        <td>2D/3Dゲーム開発経験あり。チーム開発経験あり。コアシステムから応用的な仕様まで実装が可能。</td>
+                        <td>Python，Pythorch</td>
+                        <td>3年</td>
+                        <td>世界基盤モデル学習</td>
                     </tr>
                     <tr>
                         <td>Blender</td>
-                        <td>1週間</td>
-                        <td>簡単な3Dモデル（プロップなど）を作ることができる。</td>
-                    </tr>
-                    <tr>
-                        <td>Live2D</td>
-                        <td>1週間</td>
-                        <td>メッシュ割りと表情遷移が実装できる。</td>
+                        <td>1年</td>
+                        <td>研究用途．発表資料作成</td>
                     </tr>
                 </tbody>
             </table>
@@ -867,19 +654,15 @@
         <h1 id="links">Links</h1>
         <section style="background: transparent; border: none; box-shadow: none; padding: 0;">
             <ul class="links-list">
-                <li><a href="https://github.com/tanahashi415" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li><a href="https://unityroom.com/users/5mblykan2p7xvrgi0h1t" target="_blank"
-                        rel="noopener noreferrer">unityroom</a></li>
-                <li><a href="https://x.com/awesome_yoshibo" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
-                </li>
-                <li><a href="https://atcoder.jp/users/yoCmasa" target="_blank" rel="noopener noreferrer">AtCoder</a>
+                <li><a href="https://github.com/banban1029" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://x.com/banban_1029" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
                 </li>
             </ul>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2025-2026 Tanahashi｜Game Programmer Portfolio</p>
+        <p>&copy; 2026 Tahara｜Portfolio</p>
     </footer>
 </body>
 
