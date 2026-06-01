@@ -310,6 +310,8 @@
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 15px;
             padding: 0;
+            margin: 0;
+            list-style: none;
         }
 
         .links-list li {
@@ -406,7 +408,7 @@
                     <div class="project-media">
                         <h4>授与品</h4>
                         <div class="screenshots" style="display: block;">
-                            <img src="images/award1.JPG" alt="自動運転AIチャレンジ スクリーンショット"
+                            <img src="images/award1.JPG" alt="award1"
                                 style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto;">
                         </div>
                     </div>
@@ -438,7 +440,7 @@
                     <div class="project-media">
                         <h4>解説席/議論風景</h4>
                         <div class="screenshots" style="display: block;">
-                            <img src="images/kg.png" alt="自動運転AIチャレンジ スクリーンショット"
+                            <img src="images/aichallenge/kg_aic.png" alt="自動運転AIチャレンジ"
                                 style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto;">
                         </div>
 
@@ -455,10 +457,10 @@
 
                         <h4>決勝戦で用いた経路戦略</h4>
                         <div style="border: 1px solid #333; border-radius: 8px; overflow: hidden; background: #1a1a1a;">
-                            <iframe src="images/AIChallenge.pdf#view=FitH" width="100%" height="600px"
+                            <iframe src="images/aichallenge/kg_aic.pdf#view=FitH" width="100%" height="600px"
                                 style="border: none; display: block;">
                                 お使いのブラウザはPDFの埋め込み表示に対応していません．
-                                <a href="images/AIChallenge.pdf"
+                                <a href="images/aichallenge/kg_aic.pdf"
                                     style="color: #0072ce; padding: 20px; display: inline-block;">
                                     こちらからPDFをダウンロードしてご確認ください．
                                 </a>
@@ -508,20 +510,30 @@
 
         <section>
             <div class="project">
-                <h2>自動運転シミュレーション：AWSIMを用いた自社EV mibotのデジタルツイン環境構築</h2>
+                <h2>自動運転システム開発：AWSIMを用いた自社EV mibotのデジタルツイン環境構築</h2>
                 <h3>KGモーターズ株式会社における自動運転システム開発およびアセットパイプラインの構築</h3>
                 <div class="project-details">
+
                     <div class="project-media">
-                        <h4>技術解説記事（Zenn）</h4>
+                        <h4>技術動画</h4>
+
+                        <h5 style="color: #555; margin: 10px 0 5px 0; font-size: 0.9rem;">▼ 実車自動走行の検証</h5>
+                        <div
+                            style="border: 1px solid #333; border-radius: 8px; overflow: hidden; background: #1a1a1a; margin-bottom: 20px;">
+                            <video controls autoplay muted loop playsinline
+                                style="width: 100%; height: auto; display: block; background: #000;">
+                                <source src="videos/mibot_real.mp4" type="video/mp4">
+                                お使いのブラウザは動画再生に対応していません。
+                            </video>
+                        </div>
+
+                        <h5 style="color: #555; margin: 10px 0 5px 0; font-size: 0.9rem;">▼ AWSIM上でのデジタルツイン環境</h5>
                         <div style="border: 1px solid #333; border-radius: 8px; overflow: hidden; background: #1a1a1a;">
-                            <iframe src="https://zenn.dev/banban1029/articles/171ae7bb341897" width="100%"
-                                height="600px" style="border: none; display: block; background: #fff;">
-                                お使いのブラウザはプロフィールの埋め込み表示に対応していません．
-                                <a href="https://zenn.dev/banban1029/articles/171ae7bb341897"
-                                    style="color: #0072ce; padding: 20px; display: inline-block;">
-                                    こちらから直接記事をご確認ください．
-                                </a>
-                            </iframe>
+                            <video controls autoplay muted loop playsinline
+                                style="width: 100%; height: auto; display: block; background: #000;">
+                                <source src="videos/mibot_sim.mp4" type="video/mp4">
+                                お使いのブラウザは動画再生に対応していません。
+                            </video>
                         </div>
                     </div>
 
@@ -571,11 +583,11 @@
                     <div class="project-media">
                         <h4>実装図</h4>
                         <div class="screenshots" style="display: block;">
-                            <img src="images/face.png" alt="自動運転AIチャレンジ スクリーンショット"
+                            <img src="images/minipupper/face.png" alt="generate face"
                                 style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto;">
                         </div>
                         <div class="screenshots" style="display: block;">
-                            <img src="images/minipupper.png" alt="自動運転AIチャレンジ スクリーンショット"
+                            <img src="images/minipupper/pose.png" alt="generate pose"
                                 style="width: 100%; max-width: 600px; height: auto; display: block; margin: 0 auto;">
                         </div>
                     </div>
@@ -623,30 +635,36 @@
                     <tr>
                         <td>C</td>
                         <td>4年</td>
-                        <td>ソートやリスト等の基本アルゴリズムを網羅</td>
+                        <td>ソートやリスト等の基本アルゴリズムを網羅．</td>
                     </tr>
                     <tr>
                         <td>C++，ROS2，OpenCV，OpenGL</td>
                         <td>3年</td>
-                        <td>研究用途．実世界への幾何較正済み投影コンテンツ作成，自動運転開発</td>
+                        <td>研究用途．実世界への幾何較正済み投影コンテンツ作成，自動運転開発．</td>
                     </tr>
                     <tr>
                         <td>C#，Unity</td>
                         <td>3年</td>
-                        <td>Unityで使用</td>
+                        <td>Unity．自動運転開発におけるデジタルツイン実装．</td>
                     </tr>
                     <tr>
                         <td>Python，Pythorch</td>
                         <td>3年</td>
-                        <td>世界基盤モデル学習</td>
+                        <td>世界基盤モデル学習．</td>
                     </tr>
                     <tr>
                         <td>Blender</td>
                         <td>1年</td>
-                        <td>研究用途．発表資料作成</td>
+                        <td>研究用途．発表資料作成．</td>
                     </tr>
                 </tbody>
             </table>
+            <p>
+                <strong>学理</strong><br>
+                計測工学，ヒューマンインタフェース工学，電子工学，制御工学，
+                システム最適化，信号処理，応用物理学，光学，視覚心理学，
+                コンピュータビジョン，コンピュータグラフィックス，機械学習．
+            </p>
         </section>
 
         <hr>
@@ -657,12 +675,14 @@
                 <li><a href="https://github.com/banban1029" target="_blank" rel="noopener noreferrer">GitHub</a></li>
                 <li><a href="https://x.com/banban_1029" target="_blank" rel="noopener noreferrer">X (Twitter)</a>
                 </li>
+                <li><a href="https://zenn.dev/banban1029" target="_blank" rel="noopener noreferrer">Zenn</a>
+                </li>
             </ul>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2026 Tahara｜Portfolio</p>
+        <p>&copy; 2026 Tahara| Portfolio</p>
     </footer>
 </body>
 
