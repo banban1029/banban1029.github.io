@@ -1,0 +1,108 @@
+        <section>
+            <div class="project">
+                <h2>CupCon ～Chase the Sense～</h2>
+                <h3>深度カメラとモーションセンサで操作する，カップシャッフルの記憶・追跡ゲーム</h3>
+                <div class="project-details">
+                    <div class="project-media">
+                        <h4>ゲームの進行</h4>
+                        <div class="screenshots"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px;">
+                            <figure style="margin: 0;">
+                                <figcaption style="color: #f0b429; font-weight: bold; margin-bottom: 8px;">
+                                    1. 番号の提示
+                                </figcaption>
+                                <img src="images/game/cupcon_step1_number.jpg" alt="机の上に並んだ番号"
+                                    style="width: 100%; max-width: 841px; height: auto; display: block; border: 1px solid #3e3e42; border-radius: 6px;">
+                                <figcaption style="color: #a0a0a6; font-size: 0.9em; margin-top: 8px;">
+                                    机の上に並んだ番号を一定時間だけ見せる．
+                                </figcaption>
+                            </figure>
+                            <figure style="margin: 0;">
+                                <figcaption style="color: #f0b429; font-weight: bold; margin-bottom: 8px;">
+                                    2. カップによる被覆と入れ替え
+                                </figcaption>
+                                <img src="images/game/cupcon_step2_shuffle.jpg" alt="カップが番号を覆って入れ替わる様子"
+                                    style="width: 100%; max-width: 840px; height: auto; display: block; border: 1px solid #3e3e42; border-radius: 6px;">
+                                <figcaption style="color: #a0a0a6; font-size: 0.9em; margin-top: 8px;">
+                                    番号が隠れた状態でカップが入れ替わる．
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <h4>手の検出による操作</h4>
+                        <div class="screenshots"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px;">
+                            <figure style="margin: 0;">
+                                <figcaption style="color: #f0b429; font-weight: bold; margin-bottom: 8px;">
+                                    握り拳の検出
+                                </figcaption>
+                                <img src="images/game/cupcon_hand_fist.jpg" alt="握り拳と手の関節点の検出結果"
+                                    style="width: 100%; max-width: 630px; height: auto; display: block; border: 1px solid #3e3e42; border-radius: 6px;">
+                                <figcaption style="color: #a0a0a6; font-size: 0.9em; margin-top: 8px;">
+                                    深度カメラが取得した手の関節点から形状を判別する．
+                                </figcaption>
+                            </figure>
+                            <figure style="margin: 0;">
+                                <figcaption style="color: #f0b429; font-weight: bold; margin-bottom: 8px;">
+                                    ピースサインの検出
+                                </figcaption>
+                                <img src="images/game/cupcon_hand_peace.jpg" alt="ピースサインと手の関節点の検出結果"
+                                    style="width: 100%; max-width: 630px; height: auto; display: block; border: 1px solid #3e3e42; border-radius: 6px;">
+                                <figcaption style="color: #a0a0a6; font-size: 0.9em; margin-top: 8px;">
+                                    判別した形状をアイテムの発動に割り当てている．
+                                </figcaption>
+                            </figure>
+                        </div>
+
+                        <h4>発表スライド（全4ページ）</h4>
+                        <div style="border: 1px solid #333; border-radius: 8px; overflow: hidden; background: #1a1a1a;">
+                            <iframe src="images/game/CupCon.pdf#view=FitH" width="100%"
+                                style="border: none; display: block; aspect-ratio: 16 / 10; min-height: 420px;">
+                                お使いのブラウザはPDFの埋め込み表示に対応していません．
+                                <a href="images/game/CupCon.pdf"
+                                    style="color: #0072ce; padding: 20px; display: inline-block;">
+                                    こちらからPDFをダウンロードしてご確認ください．
+                                </a>
+                            </iframe>
+                        </div>
+                        <p style="margin-top: 10px;">
+                            <a href="images/game/CupCon.pdf" target="_blank" rel="noopener noreferrer"
+                                style="color: #0072ce;">スライドを別タブで開く（タイトル，使用機材，ゲーム内容，アイテム）</a>
+                        </p>
+                    </div>
+
+                    <div class="project-explain">
+                        <p>
+                            <strong>ゲーム概要</strong><br>
+                            古くからある手遊びのカップシャッフルを，深度カメラとモーションセンサで遊ぶ形に作り直した作品です．プレイヤーは机に並んだ番号付きのカップを記憶し，シャッフルが終わった後，番号の小さい順にカップを当てていきます．正解した数に応じて得点が加算されます．コントローラは使わず，手の動きとハンドサインだけで操作します．
+                        </p>
+                        <p>
+                            <strong>ゲームルール</strong><br>
+                            ラウンドは三つの段階に分かれます．第一段階では，番号が書かれた位置が一定時間提示されます．第二段階では，カップが番号を覆った状態で入れ替わります．第三段階では，プレイヤーが番号の昇順にカップを指し，その正誤で得点が決まります．記憶量と入れ替え速度が上がるほど難度が上がる設計です．
+                        </p>
+                        <p>
+                            <strong>アイテムとハンドサイン</strong><br>
+                            追跡に失敗したときの救済手段として，二種類のアイテムを用意しました．一つはカップを揺らして中身の手がかりを得るもの，もう一つは虫眼鏡で特定のカップを確認するものです．アイテムの発動はハンドサインに割り当てており，握り拳とピースサインをそれぞれ別の機能に対応させています．画面のどこかにあるボタンを探す必要がなく，遊んでいる姿勢のまま操作が続けられる点を狙いました．
+                        </p>
+                        <p>
+                            <strong>使用した機材と開発環境</strong><br>
+                            ゲーム本体はUnity
+                            2022.3.36.f1で開発しました．手の位置と形状の取得には深度カメラであるOAK-D-Liteを用い，取得した手の関節点からハンドサインを判別しています．虫眼鏡型のデバイスにはM5StickC
+                            Plusを組み込み，手に持った物体の動きをゲーム内の操作に反映させています．
+                        </p>
+                        <p>
+                            <strong>開発期間</strong><br>
+                            （ここに開発期間を記入してください）
+                        </p>
+                        <p>
+                            <strong>制作メンバー / 自身の役割</strong><br>
+                            （ここに人数と担当範囲を記入してください）
+                        </p>
+                        <p>
+                            <strong>制作背景</strong><br>
+                            WelcomeRace2025に向けて制作しました．画面の中だけで完結しない，手に持った物体と自分の手の動きがそのまま入力になる遊びを作ることを目的としています．
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
