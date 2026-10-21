@@ -4,10 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tahara Banjou's Portfolio</title>
+    <title>田原 万丈 (Tahara Banjou)｜ポートフォリオ</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Serif+JP:wght@400;600;700&display=swap"
+        rel="stylesheet"> -->
     <style>
         body {
             font-family: 'Helvetica Neue', Arial, 'Segoe UI', sans-serif;
+            /* font-family: 'Libertinus Serif', 'Noto Serif JP', serif; */
             line-height: 1.7;
             margin: 0;
             padding: 0;
@@ -31,24 +37,43 @@
             border-bottom: 3px solid #00439c;
             /* PlayStation Blue */
             color: #111;
-            padding: 3rem 0;
+            padding: 1.0srem 0;
             text-align: center;
         }
 
         .site-title {
             margin: 0;
-            font-size: 2.8rem;
+            border-left: none;
+            padding-left: 0;
+            text-align: center;
             font-weight: 700;
-            letter-spacing: 0.1em;
             text-transform: uppercase;
             color: #00439c;
             text-shadow: 0 2px 10px rgba(0, 67, 156, 0.15);
+        }
+
+        .site-title .name-ja {
+            display: block;
+            /* 1行ずつ改行して縦に並べる */
+            font-size: clamp(2.2rem, 7vw, 4rem);
+            letter-spacing: 0.2em;
+            padding-left: 0.2em;
+            /* 末尾の文字間隔で左に寄る分を補正して中央に揃える */
+        }
+
+        .site-title .name-en {
+            display: block;
+            font-size: clamp(1rem, 3vw, 1.6rem);
+            letter-spacing: 0.15em;
+            padding-left: 0.15em;
+            margin-top: 0.0em;
         }
 
         .last-updated {
             color: #666;
             font-size: 0.9rem;
             margin-top: 10px;
+            margin-bottom: 0px;
             font-weight: normal;
         }
 
@@ -441,8 +466,12 @@
 <body>
     <header>
         <div class="container">
-            <div class="site-title">Tahara Banjou</div>
-            <p class="last-updated">最終更新日：2026年10月5日</p>
+            <!-- <div class="site-title">Tahara Banjou</div> -->
+            <h1 class="site-title">
+                <span class="name-ja">田原 万丈</span>
+                <span class="name-en">Tahara Banjou</span>
+            </h1>
+            <p class="last-updated">最終更新日：2026年10月21日</p>
         </div>
     </header>
 
@@ -575,7 +604,7 @@
             <div class="submitted-papers" style="margin-top: 25px; padding-left: 5px;">
                 <h4 style="margin-bottom: 5px;">投稿中 / Under Review</h4>
                 <p style="margin: 0; color: #555; font-size: 0.95em;">
-                    SIGGRAPH 2027
+                    SIGGRAPH 2027.
                 </p>
             </div>
         </section>
